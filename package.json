@@ -1,11 +1,11 @@
 {
 	"name": "kifor-prettier-config",
 	"description": "prettier shareable config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"exports": "./.prettierrc.js",
 	"files": [
-		".prettierrc.ts"
+		".prettierrc.js"
 	],
 	"engines": {
 		"node": ">=20.8.1"
