@@ -74,3 +74,5 @@ jobs:
         run: npm run format:check
       - name: Lint check
         run: npm run lint:check
+      - name: Run tests with coverage
+        run: npm test -- --coverage

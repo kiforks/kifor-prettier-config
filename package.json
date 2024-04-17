@@ -78,14 +78,14 @@
 	},
 	"scripts": {
 		"update": "ncu -u && npm install",
-		"build": "rollup -c && prettier --write .prettierrc.js",
+		"build": "rollup -c && prettier --write .stylelintrc.js",
 		"watch": "npm run build && chokidar 'src/**/*.ts' --ignore '**/*.spec.ts' -c 'npm run build'",
-		"lint": "npx eslint '**/*.js' --quiet --fix",
-		"lint:check": "npx eslint '**/*.js' --quiet",
+		"lint": "npx eslint '**/*.{ts,html,js}' --quiet --fix",
+		"lint:check": "npx eslint '**/*.{ts,html,js}' --quiet",
 		"format": "npx prettier '**/*.{ts,html,js,json,yml}' --write",
 		"format:check": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
 		"prepare": "husky install",
-		"prerelease": "npm run lint:check && npm run format:check",
+		"prerelease": "npm run lint:check && npm run format:check && npm run test",
 		"test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules --no-warnings\" npx jest"
 	},
 	"husky": {
