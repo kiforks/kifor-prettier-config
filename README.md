@@ -23,12 +23,9 @@ yarn add prettier kifor-prettier-config --dev
 Within your **prettier** config file:
 
 ```javascript
-// .prettierrc.js file
-import config from './node_modules/kifor-prettier-config/.prettierrc.js';
+// .prettierrc.json file
 
-export default {
-  ...config,
-};
+"kifor-prettier-config"
 ```
 
 ## Extends
