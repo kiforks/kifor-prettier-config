@@ -78,7 +78,7 @@
 	},
 	"scripts": {
 		"update": "ncu -u && npm install",
-		"build": "rollup -c && prettier --write .stylelintrc.js",
+		"build": "rollup -c && prettier --write .prettierrc.js",
 		"watch": "npm run build && chokidar 'src/**/*.ts' --ignore '**/*.spec.ts' -c 'npm run build'",
 		"lint": "npx eslint '**/*.{ts,html,js}' --quiet --fix",
 		"lint:check": "npx eslint '**/*.{ts,html,js}' --quiet",
