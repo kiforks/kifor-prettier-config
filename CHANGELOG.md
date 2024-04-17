@@ -1,5 +1,11 @@
 # Changelog
 
+<a name="1.0.4"></a>
+# 1.0.4
+
+1. [x] Fixed: format of config file from `js` to `json` ([4](https://github.com/kiforks/kifor-prettier-config/pull/4)) ([@kiforks](https://github.com/kiforks)).
+
+
 <a name="1.0.3"></a>
 # 1.0.3
 
