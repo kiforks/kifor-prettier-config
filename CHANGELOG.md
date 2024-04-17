@@ -3,7 +3,8 @@
 <a name="1.0.1"></a>
 # 1.0.1
 
-1. [x] Changed: repository settings
+1. [x] Changed: repository settings ([1](https://github.com/kiforks/kifor-prettier-config/pull/1)) ([@kiforks](https://github.com/kiforks)).
+
 
 <a name="1.0.0"></a>
 # 1.0.0
