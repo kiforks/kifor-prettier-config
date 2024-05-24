@@ -1,5 +1,11 @@
 # Changelog
 
+<a name="1.0.6"></a>
+# 1.0.6
+
+1. [x] Updated: package versions ([6](https://github.com/kiforks/kifor-prettier-config/pull/6)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Added: .gitattributes configuration file ([6](https://github.com/kiforks/kifor-prettier-config/pull/6)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.5"></a>
 # 1.0.5
 
