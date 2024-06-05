@@ -1,7 +1,7 @@
 {
 	"name": "kifor-prettier-config",
 	"description": "prettier shareable config",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"type": "module",
 	"exports": "./.prettierrc.json",
 	"files": [
