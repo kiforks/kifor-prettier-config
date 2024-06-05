@@ -1,5 +1,12 @@
 # Changelog
 
+<a name="1.0.7"></a>
+# 1.0.7
+
+1. [x] Updated: package versions ([8](https://github.com/kiforks/kifor-prettier-config/pull/8)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Removed: redundant files ([8](https://github.com/kiforks/kifor-prettier-config/pull/8)) ([@kiforks](https://github.com/kiforks)).
+3. [x] Disabled: dependabot ([8](https://github.com/kiforks/kifor-prettier-config/pull/8)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.6"></a>
 # 1.0.6
 
