@@ -1,18 +1,32 @@
-name: Deploy
+name: CD
 
 on:
   pull_request:
+    branches:
+      - main
+      - '!dependabot/**'
     types:
       - closed
-    branches:
-      - 'main'
 
 env:
-  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+  NPM_ACCESS_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+
+permissions:
+  actions: read
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
 
 jobs:
   publish:
-    name: 'Deploy and Tag'
+    name: 'Publish configuration'
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
@@ -32,3 +46,5 @@ jobs:
 
       - name: Publish to npm
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
