@@ -7,6 +7,17 @@ on:
       - '!dependabot/**'
 
 jobs:
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automatic label creation for PR
+        uses: actions/labeler@v5
+        with:
+          sync-labels: true
+
   check-version:
     name: 'Check Version Increment'
     runs-on: ubuntu-latest
