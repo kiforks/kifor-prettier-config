@@ -3,10 +3,10 @@
 ## [1.1.0] - 2024-12-05
 
 | **Category**      | **Description**                                                                                                                                      |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Major Changes** | - Updated CI workflows to improve efficiency and maintainability.                                                                                   |
-| **Improvements**  | - Added import ordering rules to the Prettier configuration for better code consistency.                                                             |
-| **Enhancements**  | - Introduced new Git rules: <br> • **Commit Rules**: Enforced message formatting for standardized commit messages. <br> • **Push Rules**: Enforced branch naming patterns for consistent workflow. |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Major Changes**  | - Updated CI workflows to improve efficiency and maintainability.                                                                                   |
+| **Improvements**   | - Added import ordering rules to the Prettier configuration for better code consistency. <br> - Updated the import order configuration to handle all cases properly, including: <br> &nbsp;&nbsp;• Specific handling for `@angular` modules. <br> &nbsp;&nbsp;• Correct ordering of `@env` imports. <br> &nbsp;&nbsp;• Placement of relative paths at the end of the import list. |
+| **Enhancements**   | - Introduced new Git rules: <br> • **Commit Rules**: Enforced message formatting for standardized commit messages. <br> • **Push Rules**: Enforced branch naming patterns for consistent workflow. |
 
 **Summary**:  
 This release includes major updates to the CI workflows and introduces new rules for both Git commit and push processes. Additionally, Prettier configuration has been improved with import ordering rules, ensuring consistent code style across the project.
