@@ -2,6 +2,13 @@
 	"name": "kifor-prettier-config",
 	"description": "prettier shareable config",
 	"version": "1.0.7",
+	"scripts": {
+		"update": "ncu -u && npm install",
+		"format": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
+		"format:fix": "npx prettier '**/*.{ts,html,js,json,yml}' --write",
+		"prepare": "husky install",
+		"prerelease": "npm run format"
+	},
 	"type": "module",
 	"exports": "./.prettierrc.json",
 	"files": [
@@ -61,12 +68,5 @@
 		"lodash": "^4.17.21",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.3.1"
-	},
-	"scripts": {
-		"update": "ncu -u && npm install",
-		"format": "npx prettier '**/*.{ts,html,js,json,yml}' --write",
-		"format:check": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
-		"prepare": "husky install",
-		"prerelease": "npm run format:check"
 	}
 }

@@ -70,4 +70,4 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
       - run: npm ci
       - name: Check formatting
-        run: npm run format:check
+        run: npm run format
