@@ -68,15 +68,5 @@
 		"format:check": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
 		"prepare": "husky install",
 		"prerelease": "npm run format:check"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{html,ts,js,json}": [
-			"prettier --check"
-		]
 	}
 }
